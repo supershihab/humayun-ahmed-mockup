@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    width: 834px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header h1{
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header h1 a, ul li a{
+    color: #000;
+    text-transform: uppercase;
+}
+
+header h1 a:hover, ul li a:hover{
+    color: gray;
+}
+
+ul li a{
+    font-size: 15px;
+}
+
+.flex ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+
+.hero .container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+}
+
+.hero .container img{
+    grid-column: 1/2;
+    width: 100;
+}
+
+.hero .container p{
+    grid-column: 2/-1;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin-bottom: 40px;
+}
+
+
+.feature .container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    margin-bottom: 50px;
+}
+
+.feature .container p{
+    grid-column: 1/2;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.feature .container img{
+    grid-column: 2/-1;
+    width: 100%;
+}
+
+.gallery{
+    padding: 50px 0;
+}
+
+.gallery h1{
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: grey;
+}
+
+.gallery .flex{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.col-1-3{    
+    flex-basis:33.33%; 
+    max-width: 33.33%; 
+    padding: 10px;
+}
+
+.col-1-3 em{
+    font-size: 14px;
+}
+
+.col-1-3 strong{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.gallery img{
+    height: 500px; 
+    width: 100%; 
+    object-fit: cover; 
+    object-position: left/center; 
+    border-radius: 6px; 
+    box-shadow: 0 0 23px #33333326; 
+    transition: all 0.3s linear
+}
+.gallery img:hover{
+    box-shadow: 0 0 0 #33333326;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom:50px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+footer img{
+
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+footer img a:focus{
+    color: gray;
+}
